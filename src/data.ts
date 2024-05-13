@@ -2,6 +2,8 @@
  * Header Data
  */
 
+import { link } from "fs";
+
 export const title = "John Doe";
 
 export const mainMenu = [
@@ -96,3 +98,10 @@ export const bio = [
 /********************
  * Hero Image Data
  */
+export const heroImage = {
+  firstLine: "HI THERE!",
+  secondLine: "Discover my story",
+  linkText: "VIDEO RESUME",
+  linkHref: "/video-resume",
+  image: null,
+};
