@@ -105,3 +105,27 @@ export const heroImage = {
   linkHref: "/video-resume",
   image: null,
 };
+
+/***********************
+ * Accomplishments Data
+ */
+export const accomplishments = [
+  {
+    id: 1,
+    title: "Projects completed",
+    count: 100,
+    plus: true,
+  },
+  {
+    id: 2,
+    title: "Happy clients",
+    count: 200,
+    plus: true,
+  },
+  {
+    id: 3,
+    title: "Cups of coffee",
+    count: 300,
+    plus: true,
+  },
+];
