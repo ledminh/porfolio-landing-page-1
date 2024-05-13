@@ -201,3 +201,33 @@ export const pricePlans = {
     },
   ],
 };
+
+/***********************
+ * Testimonials Data
+ */
+export const testimonials = [
+  {
+    id: 1,
+    content:
+      "John is an amazing developer. He is a great communicator and always delivers on time.",
+    author: "Jane Doe",
+    photo: null,
+    position: "CEO, XYZ Inc.",
+  },
+  {
+    id: 2,
+    content:
+      "John is a talented designer. He has a keen eye for detail and always exceeds expectations.",
+    author: "Alice Smith",
+    photo: null,
+    position: "Creative Director, ABC Corp.",
+  },
+  {
+    id: 3,
+    content:
+      "John is a professional photographer. He captures the perfect shot every time.",
+    author: "Bob Brown",
+    photo: null,
+    position: "Photography Enthusiast",
+  },
+];
