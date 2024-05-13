@@ -3,6 +3,7 @@
  */
 
 import { link } from "fs";
+import { features } from "process";
 
 export const title = "John Doe";
 
@@ -129,3 +130,74 @@ export const accomplishments = [
     plus: true,
   },
 ];
+
+/***********************
+ * My Story Data
+ */
+
+export const myStory = {
+  content:
+    "I love to design and code from scratch. I am a full stack developer with a passion for UI/UX design. I am a freelancer and I am available for hire. I have completed over 100 projects for a variety of clients. I am a photographer and I love to capture moments. I am a dreamer and I believe in turning dreams into reality. I am a happy person and I love to spread happiness.",
+};
+
+/***********************
+ * Video Resume Data
+ */
+export const videoResumeLink = "https://www.youtube.com/watch?v=1234567890";
+
+/***********************
+ * My Services Data
+ */
+export const services = [
+  {
+    id: 1,
+    title: "Web Development",
+    description:
+      "I design and develop responsive websites using the latest technologies.",
+    icon: null,
+  },
+  {
+    id: 2,
+    title: "UI/UX Design",
+    description:
+      "I design user-friendly interfaces for web and mobile applications.",
+    icon: null,
+  },
+  {
+    id: 3,
+    title: "Photography",
+    description: "I capture moments and create memories.",
+    icon: null,
+  },
+  {
+    id: 4,
+    title: "Freelancing",
+    description: "I am available for hire as a freelancer.",
+    icon: null,
+  },
+];
+
+/***********************
+ * PricePlans Data
+ */
+export const pricePlans = {
+  features: ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"],
+  plans: [
+    {
+      id: 1,
+      title: "Standard",
+      price: 100,
+      currency: "$",
+      features: [true, true, false, false, false],
+      popular: false,
+    },
+    {
+      id: 2,
+      title: "Premium",
+      price: 250,
+      currency: "$",
+      features: [true, true, true, true, true],
+      popular: true,
+    },
+  ],
+};

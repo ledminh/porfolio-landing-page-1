@@ -1,3 +1,9 @@
+import { myStory } from "@/data";
 export default function MyStory() {
-  return <>My Story</>;
+  return (
+    <div>
+      <h2>My Story</h2>
+      <p>{myStory.content}</p>
+    </div>
+  );
 }
