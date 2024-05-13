@@ -1,5 +1,5 @@
 import HeroImage from "@/components/Home/HeroImage";
-import SideMenu from "@/components/Home/SideMenu";
+import Sidebar from "@/components/Home/Sidebar";
 import Accomplishments from "@/components/Home/Accomplishments";
 import MyStory from "@/components/Home/MyStory";
 import VideoResume from "@/components/Home/VideoResume";
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <HeroImage />
-      <SideMenu />
+      <Sidebar />
       <Accomplishments />
       <MyStory />
       <VideoResume />
