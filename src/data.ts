@@ -92,3 +92,7 @@ export const bio = [
     value: "24",
   },
 ];
+
+/********************
+ * Hero Image Data
+ */
