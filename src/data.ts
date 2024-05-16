@@ -231,3 +231,24 @@ export const testimonials = [
     position: "Photography Enthusiast",
   },
 ];
+
+/***************************
+ * Latest Publications Data
+ */
+
+export const latestPublications = [
+  {
+    id: "001",
+    title: "Create a Portfolio Website Using HTML, CSS, and JavaScript",
+    date: "May 15, 2021",
+    image: null,
+    category: "Web Development",
+  },
+  {
+    id: "002",
+    title: "Design a Mobile App Using Figma and Adobe XD",
+    date: "May 10, 2021",
+    image: null,
+    category: "UI/UX Design",
+  },
+];
