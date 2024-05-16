@@ -20,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="flex justify-between items-center">
-          <Logo />
-          <MainNav />
-        </header>
-        <main>{children}</main>
+        <div className="container mx-auto shadow-sm shadow-yellow-800 background p-2 flex flex-col gap-4">
+          <header className="flex justify-between items-center">
+            <Logo />
+            <MainNav />
+          </header>
+          <main className="flex flex-col">{children}</main>
+        </div>
       </body>
     </html>
   );

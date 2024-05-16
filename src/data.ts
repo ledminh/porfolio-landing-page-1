@@ -1,9 +1,8 @@
+import heroImageJPG from "@/assets/images/hero-image.jpg";
+
 /***********************
  * Header Data
  */
-
-import { link } from "fs";
-import { features } from "process";
 
 export const title = "John Doe";
 
@@ -104,7 +103,7 @@ export const heroImage = {
   secondLine: "Discover my story",
   linkText: "VIDEO RESUME",
   linkHref: "/video-resume",
-  image: null,
+  image: heroImageJPG,
 };
 
 /***********************
