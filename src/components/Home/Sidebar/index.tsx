@@ -1,11 +1,19 @@
-import { name, socialLinks, subtitle, bio } from "@/data";
+import { sidebarData } from "@/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Sidebar() {
+  const { name, subtitle, socialLinks, bio, profilePicture } = sidebarData;
   return (
     <div>
       <div>
-        <div>Profile Picture</div>
+        <Image
+          src={profilePicture}
+          alt="profile picture"
+          width={500}
+          height={500}
+          className="rounded-full overflow-hidden w-32 h-32"
+        />
         <div>{name}</div>
         <ul>
           {subtitle.map((item) => (

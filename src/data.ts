@@ -1,4 +1,5 @@
 import heroImageJPG from "@/assets/images/hero-image.jpg";
+import profilePictureJPG from "@/assets/images/profile-picture.jpg";
 
 /***********************
  * Header Data
@@ -40,60 +41,61 @@ export const cvHref = "https://example.com/cv.pdf";
  * Sidebar Data
  */
 
-export const name = "John Doe";
-export const subtitle = [
-  "Web Developer",
-  "UI/UX Designer",
-  "Photographer",
-  "Freelancer",
-  "Dreamer",
-];
-
-export const socialLinks = [
-  {
-    id: "facebook",
-    href: "https://facebook.com",
-    icon: null,
-  },
-  {
-    id: "twitter",
-    href: "https://twitter.com",
-    icon: null,
-  },
-  {
-    id: "linkedin",
-    href: "https://linkedin.com",
-    icon: null,
-  },
-  {
-    id: "instagram",
-    href: "https://instagram.com",
-    icon: null,
-  },
-  {
-    id: "github",
-    href: "https://github.com",
-    icon: null,
-  },
-];
-
-export const bio = [
-  {
-    id: 1,
-    label: "RESIDENCE",
-    value: "United States",
-  },
-  {
-    id: 2,
-    label: "CITY",
-    value: "San Francisco, CA",
-  },
-  {
-    id: 3,
-    label: "AGE",
-    value: "24",
-  },
-];
+export const sidebarData = {
+  name: "John Doe",
+  subtitle: [
+    "Web Developer",
+    "UI/UX Designer",
+    "Photographer",
+    "Freelancer",
+    "Dreamer",
+  ],
+  socialLinks: [
+    {
+      id: "facebook",
+      href: "https://facebook.com",
+      icon: null,
+    },
+    {
+      id: "twitter",
+      href: "https://twitter.com",
+      icon: null,
+    },
+    {
+      id: "linkedin",
+      href: "https://linkedin.com",
+      icon: null,
+    },
+    {
+      id: "instagram",
+      href: "https://instagram.com",
+      icon: null,
+    },
+    {
+      id: "github",
+      href: "https://github.com",
+      icon: null,
+    },
+  ],
+  bio: [
+    {
+      id: 1,
+      label: "RESIDENCE",
+      value: "United States",
+    },
+    {
+      id: 2,
+      label: "CITY",
+      value: "San Francisco, CA",
+    },
+    {
+      id: 3,
+      label: "AGE",
+      value: "24",
+    },
+  ],
+  profilePicture: profilePictureJPG,
+};
 
 /********************
  * Hero Image Data
