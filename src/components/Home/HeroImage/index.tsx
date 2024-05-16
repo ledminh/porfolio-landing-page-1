@@ -2,11 +2,12 @@ import { heroImage } from "@/data";
 import Link from "next/link";
 
 import Image from "next/image";
+import { PlayIcon } from "@/assets/icons";
 
 export default function HeroImage() {
   const { firstLine, secondLine, linkHref, linkText, image } = heroImage;
   return (
-    <div className="h-80 w-full relative">
+    <div className="h-80 w-full relative z-10">
       <Image
         src={image}
         alt="hero image"
@@ -19,9 +20,12 @@ export default function HeroImage() {
         <h1 className="text-4xl font-bold">{secondLine}</h1>
         <Link
           href={linkHref}
-          className="px-8 py-2 border font-bold border-white rounded-lg bg-black/30 hover:bg-black/70 transition-all duration-300 ease-in-out"
+          className="px-6 py-2 border font-bold border-white rounded-lg bg-black/30 hover:bg-black/70 transition-all duration-300 ease-in-out flex items-center gap-4"
         >
-          {linkText}
+          <span>{linkText}</span>
+          <div className="w-6 h-6">
+            <PlayIcon />
+          </div>
         </Link>
       </div>
     </div>

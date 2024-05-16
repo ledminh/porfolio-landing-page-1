@@ -10,7 +10,7 @@ export default function MainNav() {
   const [shown, setShown] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <button
         onClick={() => setShown(!shown)}
         className="block md:hidden w-10 h-10"
