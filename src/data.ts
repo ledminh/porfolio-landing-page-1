@@ -1,5 +1,12 @@
 import heroImageJPG from "@/assets/images/hero-image.jpg";
 import profilePictureJPG from "@/assets/images/profile-picture.jpg";
+import {
+  FacebookIcon,
+  GithubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from "./assets/icons";
 
 /***********************
  * Header Data
@@ -43,38 +50,38 @@ export const cvHref = "https://example.com/cv.pdf";
 
 export const sidebarData = {
   name: "John Doe",
-  subtitle: [
-    "Web Developer",
-    "UI/UX Designer",
-    "Photographer",
-    "Freelancer",
-    "Dreamer",
+  subtitles: [
+    "A Web Developer",
+    "An UI/UX Designer",
+    "A Photographer",
+    "A Freelancer",
+    "A Dreamer",
   ],
   socialLinks: [
     {
       id: "facebook",
       href: "https://facebook.com",
-      icon: null,
+      icon: FacebookIcon,
     },
     {
       id: "twitter",
       href: "https://twitter.com",
-      icon: null,
+      icon: TwitterIcon,
     },
     {
       id: "linkedin",
       href: "https://linkedin.com",
-      icon: null,
+      icon: LinkedInIcon,
     },
     {
       id: "instagram",
       href: "https://instagram.com",
-      icon: null,
+      icon: InstagramIcon,
     },
     {
       id: "github",
       href: "https://github.com",
-      icon: null,
+      icon: GithubIcon,
     },
   ],
   bio: [

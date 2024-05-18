@@ -13,15 +13,21 @@ export default function Home() {
   return (
     <>
       <HeroImage />
-      <Sidebar />
-      <Accomplishments />
-      <MyStory />
-      <VideoResume />
-      <MyServices />
-      <PricePlans />
-      <Testimonials />
-      <LastestPublications />
-      <Copyright />
+      <div className="grid grid-cols-3 gap-2">
+        <div className="col-start-1 col-span-1">
+          <Sidebar />
+        </div>
+        <div className="col-start-1 col-span-3 lg:col-start-2 lg:col-span-3">
+          <Accomplishments />
+          <MyStory />
+          <VideoResume />
+          <MyServices />
+          <PricePlans />
+          <Testimonials />
+          <LastestPublications />
+          <Copyright />
+        </div>
+      </div>
     </>
   );
 }

@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="container mx-auto shadow-sm shadow-yellow-800 background p-2 flex flex-col gap-4">
-          <header className="flex justify-between items-center">
+        <div className="container mx-auto shadow-sm shadow-yellow-800 background p-2 flex flex-col gap-4 relative">
+          <header className="flex justify-between items-center sticky top-0 z-50 background">
             <Logo />
             <MainNav />
           </header>
