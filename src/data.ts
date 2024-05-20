@@ -22,7 +22,7 @@ export const mainMenu = [
   },
   {
     id: 2,
-    text: "Porfolio",
+    text: "Portfolio",
     href: "/portfolio",
   },
   {

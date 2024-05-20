@@ -13,7 +13,7 @@ export default function HeroImage() {
         alt="hero image"
         className="rounded-b-2xl overflow-hidden h-80 object-cover"
       />
-      <div className="z-50 absolute w-full h-full flex flex-col justify-center items-center text-white gap-4">
+      <div className="z-50 absolute w-full h-full flex flex-col justify-center items-center text-white gap-4 text-center">
         <h2>{firstLine}</h2>
         <h1 className="text-4xl font-bold">{secondLine}</h1>
         <Link

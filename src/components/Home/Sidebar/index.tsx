@@ -2,6 +2,7 @@ import { sidebarData } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
 import SubtitleList from "./SubtitleList";
+import ContactMe from "./ContactMe";
 
 export default function Sidebar() {
   const { name, subtitles, socialLinks, bio, profilePicture } = sidebarData;
@@ -55,7 +56,7 @@ export default function Sidebar() {
           <SubtitleList subtitles={subtitles} />
         </div>
         <div className="flex flex-col gap-8 w-full">
-          <div className="h-[1px] bg-yellow-700 w-full" />
+          <div className="h-[1px] bg-yellow-700/30 w-full" />
           <ul className="flex justify-center items-center gap-4">
             {socialLinks.map((item) => (
               <li key={item.id}>
@@ -65,18 +66,19 @@ export default function Sidebar() {
               </li>
             ))}
           </ul>
-          <div className="h-[1px] bg-yellow-700 w-full" />
+          <div className="h-[1px] bg-yellow-700/30 w-full" />
         </div>
 
-        <div>
+        <ul className="w-full flex flex-col gap-4">
           {bio.map((item) => (
-            <div key={item.id}>
-              <h3>{item.label}</h3>
-              <p>{item.value}</p>
-            </div>
+            <li key={item.id} className="flex justify-between items-center">
+              <span className="font-bold">{item.label}</span>
+              <span>{item.value}</span>
+            </li>
           ))}
-        </div>
-        <button>Contact Me</button>
+        </ul>
+        <div className="border-dotted border-b-2 border-b-yellow-700/30 w-4/5" />
+        <ContactMe />
       </div>
     </>
   );
