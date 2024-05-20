@@ -1,5 +1,7 @@
-"use client";
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react-hooks/exhaustive-deps */
+
+"use client";
 
 import React, { useState, useEffect } from "react";
 
@@ -8,41 +10,73 @@ type Props = {
 };
 
 export default function SubtitleList({ subtitles }: Props) {
-  const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
-  const [currentSubtitle, setCurrentSubtitle] = useState("");
+  const [state, setState] = useState({
+    currentSubtitleIndex: 0,
+    pointer: 0,
+    direction: "forward",
+  });
+
+  const [timer, setTimer] = useState(0);
+  const [nextEventTime, setNextEventTime] = useState(-1);
+
+  const { currentSubtitleIndex, pointer } = state;
+  const currentSubtitle = subtitles[currentSubtitleIndex];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSubtitleIndex(
-        (prevIndex) => (prevIndex + 1) % subtitles.length
-      );
+    const tInterval = setInterval(() => {
+      setTimer((prevState) => prevState + 1);
+    }, 170);
 
-      setCurrentSubtitle("");
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [subtitles]);
+    return () => {
+      clearInterval(tInterval);
+    };
+  }, []);
 
   useEffect(() => {
-    const typingEffectInterval = setInterval(() => {
+    if (timer < nextEventTime) return;
+
+    setState((prevState) => {
+      const { currentSubtitleIndex, pointer, direction } = prevState;
+
       const subtitle = subtitles[currentSubtitleIndex];
 
-      setCurrentSubtitle((prevSubtitle) => {
-        if (prevSubtitle === subtitle) {
-          return subtitle;
-        } else {
-          return subtitle.slice(0, prevSubtitle.length + 1);
-        }
-      });
-    }, 100);
+      let newPointer = pointer;
+      let newDirection = direction;
+      let newCurrentSubtitleIndex = currentSubtitleIndex;
+      if (direction === "forward") {
+        newPointer = pointer + 1;
 
-    return () => clearInterval(typingEffectInterval);
-  }, [currentSubtitleIndex, subtitles]);
+        if (newPointer === subtitle.length) {
+          newDirection = "backward";
+          setNextEventTime(timer + 15);
+        } else {
+          setNextEventTime(-1);
+        }
+      } else {
+        newPointer = pointer - 1;
+
+        if (newPointer === 0) {
+          newDirection = "forward";
+          setNextEventTime(timer + 5);
+          newCurrentSubtitleIndex =
+            (currentSubtitleIndex + 1) % subtitles.length;
+        } else {
+          setNextEventTime(-1);
+        }
+      }
+
+      return {
+        currentSubtitleIndex: newCurrentSubtitleIndex,
+        pointer: newPointer,
+        direction: newDirection,
+      };
+    });
+  }, [timer]);
 
   return (
     <h3 className="font-semibold text-sm">
       <span>I'M </span>
-      {currentSubtitle.toLocaleUpperCase()}
+      {currentSubtitle.slice(0, pointer).toLocaleUpperCase()}
       <span className="cursor-blink">|</span>
     </h3>
   );
