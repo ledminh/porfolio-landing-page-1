@@ -1,19 +1,14 @@
-"use client";
+import Link from "next/link";
 
-import MessageModal from "@/components/MessageModal";
-import { useState } from "react";
 export default function ContactMe() {
-  const [showModal, setShowModal] = useState(false);
-
   return (
-    <>
-      <button
-        className="bg-yellow-700 text-white p-4 rounded-xl hover:bg-yellow-700/80"
-        onClick={() => setShowModal(true)}
-      >
-        Contact Me
-      </button>
-      {showModal && <MessageModal />}
-    </>
+    <Link
+      href="/contact"
+      className="bg-yellow-700 text-white p-4 rounded-xl hover:bg-yellow-700/80"
+    >
+      Contact Me
+    </Link>
   );
 }
+
+// https://github.com/vercel/nextgram/blob/main/app/%40modal/(.)photos/%5Bid%5D/modal.tsx
