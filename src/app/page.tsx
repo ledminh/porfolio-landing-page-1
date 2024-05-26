@@ -17,7 +17,7 @@ export default function Home() {
         <div className="col-start-1 col-span-1">
           <Sidebar />
         </div>
-        <div className="mt-6 col-start-1 col-span-3 lg:col-start-2 lg:col-span-3 lg:-translate-y-16 z-40">
+        <div className="flex flex-col gap-16 mt-6 col-start-1 col-span-3 lg:col-start-2 lg:col-span-3 lg:-translate-y-16 z-40">
           <Accomplishments />
           <MyStory />
           <VideoResume />

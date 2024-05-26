@@ -2,7 +2,7 @@ import { accomplishments } from "@/data";
 
 export default function Accomplishments() {
   return (
-    <ul className="flex flex-col justify-center items-center gap-4 w-full lg:flex-row">
+    <ul className="flex flex-col justify-center items-center gap-4 lg:gap-10 w-full lg:flex-row">
       {accomplishments.map((item) => (
         <li
           key={item.id}

@@ -32,4 +32,22 @@
     opacity: 0.3;
     transform: translateY(-70%) translateX(10%);
   }
+
+  .quotation-mark::before {
+    content: '"';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 2rem;
+    @apply text-yellow-700;
+  }
+
+  .quotation-mark::after {
+    content: '"';
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 2rem;
+    @apply text-yellow-700;
+  }
 }
