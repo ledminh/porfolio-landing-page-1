@@ -10,6 +10,7 @@ export default function Sidebar() {
     <>
       <div
         className={`
+        tape
         bg-white p-4 rounded-lg
         fixed bottom-0 left-1/2 -translate-x-1/2
         flex flex-col gap-4 justify-center items-center
@@ -36,7 +37,9 @@ export default function Sidebar() {
         </ul>
       </div>
       <div
-        className={`hidden 
+        className={`
+        tape
+        hidden 
         lg:flex flex-col gap-8 justify-center items-center
         z-50 p-4 rounded-lg bg-white 
         w-4/5 mx-auto
