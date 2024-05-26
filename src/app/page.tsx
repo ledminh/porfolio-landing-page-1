@@ -9,6 +9,9 @@ import Testimonials from "@/components/Home/Testimonials";
 import LastestPublications from "@/components/Home/LastestPublications";
 import Copyright from "@/components/Home/Copyright";
 
+import Modal from "@/components/Modal";
+import ContactForm from "@/components/ContactForm";
+
 export default function Home() {
   return (
     <>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .background {
-  background-color: #f4f5f7;
+  background-color: #d6d3c3;
 }
 
 .cursor-blink {
@@ -19,3 +19,5 @@
     opacity: 1;
   }
 }
+
+

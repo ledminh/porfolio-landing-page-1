@@ -4,7 +4,7 @@ export default function ContactMe() {
   return (
     <Link
       href="/contact"
-      className="bg-yellow-700 text-white p-4 rounded-xl hover:bg-yellow-700/80"
+      className="bg-yellow-700 text-white p-4 rounded-xl hover:bg-yellow-700/80 font-bold"
     >
       Contact Me
     </Link>
