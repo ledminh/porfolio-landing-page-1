@@ -10,7 +10,8 @@ export default function Sidebar() {
     <>
       <div
         className={`
-        tape
+        border-2 border-black
+        z-50
         bg-white p-4 rounded-lg
         fixed bottom-0 left-1/2 -translate-x-1/2
         flex flex-col gap-4 justify-center items-center

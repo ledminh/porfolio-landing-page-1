@@ -9,9 +9,6 @@ import Testimonials from "@/components/Home/Testimonials";
 import LastestPublications from "@/components/Home/LastestPublications";
 import Copyright from "@/components/Home/Copyright";
 
-import Modal from "@/components/Modal";
-import ContactForm from "@/components/ContactForm";
-
 export default function Home() {
   return (
     <>
@@ -20,7 +17,7 @@ export default function Home() {
         <div className="col-start-1 col-span-1">
           <Sidebar />
         </div>
-        <div className="col-start-1 col-span-3 lg:col-start-2 lg:col-span-3">
+        <div className="mt-6 col-start-1 col-span-3 lg:col-start-2 lg:col-span-3 lg:-translate-y-16 z-40">
           <Accomplishments />
           <MyStory />
           <VideoResume />

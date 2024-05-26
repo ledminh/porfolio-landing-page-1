@@ -20,14 +20,16 @@
   }
 }
 
-.tape::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 1rem;
-  background-color: #000;
-  opacity: 0.3;
-  transform: translateY(-70%) translateX(10%);
+@layer utilities {
+  .tape::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 0.7rem;
+    background-color: #000;
+    opacity: 0.3;
+    transform: translateY(-70%) translateX(10%);
+  }
 }
