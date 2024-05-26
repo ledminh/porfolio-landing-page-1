@@ -151,7 +151,7 @@ export const myStory = {
 /***********************
  * Video Resume Data
  */
-export const videoResumeLink = "https://www.youtube.com/watch?v=1234567890";
+export const videoResumeYoutubeID = "vZpeM_gxLTY";
 
 /***********************
  * My Services Data
