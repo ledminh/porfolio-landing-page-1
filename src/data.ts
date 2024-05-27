@@ -1,5 +1,10 @@
 import heroImageJPG from "@/assets/images/hero-image.jpg";
 import profilePictureJPG from "@/assets/images/profile-picture.jpg";
+import testiPhoto1JPG from "@/assets/images/profile-photos/photo1.jpg";
+import testiPhoto2JPG from "@/assets/images/profile-photos/photo2.jpg";
+import testiPhoto3JPG from "@/assets/images/profile-photos/photo3.jpg";
+import testiPhoto4JPG from "@/assets/images/profile-photos/photo4.jpg";
+
 import {
   DesignIcon,
   FacebookIcon,
@@ -223,7 +228,7 @@ export const testimonials = [
     content:
       "John is an amazing developer. He is a great communicator and always delivers on time.",
     author: "Jane Doe",
-    photo: null,
+    photo: testiPhoto1JPG,
     position: "CEO, XYZ Inc.",
   },
   {
@@ -231,7 +236,7 @@ export const testimonials = [
     content:
       "John is a talented designer. He has a keen eye for detail and always exceeds expectations.",
     author: "Alice Smith",
-    photo: null,
+    photo: testiPhoto2JPG,
     position: "Creative Director, ABC Corp.",
   },
   {
@@ -239,8 +244,16 @@ export const testimonials = [
     content:
       "John is a professional photographer. He captures the perfect shot every time.",
     author: "Bob Brown",
-    photo: null,
+    photo: testiPhoto3JPG,
     position: "Photography Enthusiast",
+  },
+  {
+    id: 4,
+    content:
+      "John is a reliable freelancer. He is always ready to take on new challenges and deliver outstanding results.",
+    author: "Eve Wilson",
+    photo: testiPhoto4JPG,
+    position: "Freelance Writer",
   },
 ];
 
