@@ -1,11 +1,15 @@
 import heroImageJPG from "@/assets/images/hero-image.jpg";
 import profilePictureJPG from "@/assets/images/profile-picture.jpg";
 import {
+  DesignIcon,
   FacebookIcon,
+  FreelanceIcon,
   GithubIcon,
   InstagramIcon,
   LinkedInIcon,
+  PhotographyIcon,
   TwitterIcon,
+  WebIcon,
 } from "./assets/icons";
 
 /***********************
@@ -162,26 +166,26 @@ export const services = [
     title: "Web Development",
     description:
       "I design and develop responsive websites using the latest technologies.",
-    icon: null,
+    icon: WebIcon,
   },
   {
     id: 2,
     title: "UI/UX Design",
     description:
       "I design user-friendly interfaces for web and mobile applications.",
-    icon: null,
+    icon: DesignIcon,
   },
   {
     id: 3,
     title: "Photography",
     description: "I capture moments and create memories.",
-    icon: null,
+    icon: PhotographyIcon,
   },
   {
     id: 4,
     title: "Freelancing",
     description: "I am available for hire as a freelancer.",
-    icon: null,
+    icon: FreelanceIcon,
   },
 ];
 
