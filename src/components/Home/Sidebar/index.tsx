@@ -36,7 +36,7 @@ export default function Sidebar() {
         fixed bottom-0 left-1/2 -translate-x-1/2
         flex flex-col gap-4 justify-center items-center
         lg:hidden
-        ${isHalfway ? "opacity-0" : "opacity-100"}  
+        ${isHalfway ? "hidden" : "block"}  
       `}
       >
         <Image
