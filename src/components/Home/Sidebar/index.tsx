@@ -1,11 +1,31 @@
+"use client";
+
 import { sidebarData } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
 import SubtitleList from "./SubtitleList";
 import ContactMe from "./ContactMe";
 
+import { useEffect, useState } from "react";
+
 export default function Sidebar() {
   const { name, subtitles, socialLinks, bio, profilePicture } = sidebarData;
+
+  const [isHalfway, setIsHalfway] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsHalfway(true);
+    } else {
+      setIsHalfway(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <div
@@ -15,7 +35,8 @@ export default function Sidebar() {
         bg-white p-4 rounded-lg
         fixed bottom-0 left-1/2 -translate-x-1/2
         flex flex-col gap-4 justify-center items-center
-        lg:hidden  
+        lg:hidden
+        ${isHalfway ? "opacity-0" : "opacity-100"}  
       `}
       >
         <Image
