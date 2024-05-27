@@ -5,6 +5,9 @@ import testiPhoto2JPG from "@/assets/images/profile-photos/photo2.jpg";
 import testiPhoto3JPG from "@/assets/images/profile-photos/photo3.jpg";
 import testiPhoto4JPG from "@/assets/images/profile-photos/photo4.jpg";
 
+import publishPhoto1JPG from "@/assets/images/publish/photo1.jpg";
+import publishPhoto2JPG from "@/assets/images/publish/photo2.jpg";
+
 import {
   DesignIcon,
   FacebookIcon,
@@ -266,14 +269,14 @@ export const latestPublications = [
     id: "001",
     title: "Create a Portfolio Website Using HTML, CSS, and JavaScript",
     date: "May 15, 2021",
-    image: null,
+    image: publishPhoto1JPG,
     category: "Web Development",
   },
   {
     id: "002",
     title: "Design a Mobile App Using Figma and Adobe XD",
     date: "May 10, 2021",
-    image: null,
+    image: publishPhoto2JPG,
     category: "UI/UX Design",
   },
 ];

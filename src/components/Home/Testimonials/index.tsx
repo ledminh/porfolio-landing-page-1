@@ -26,7 +26,7 @@ export default function Testimonials() {
         <button
           onClick={handlePrev}
           disabled={index === 0}
-          className="bg-yellow-700 text-white p-4 rounded-full absolute top-5 left-5 opacity-0 group-hover:opacity-100 disabled:opacity-5 disabled:group-hover:opacity-5 translate-x-12 group-hover:transition group-hover:duration-500 group-hover:translate-x-0"
+          className="bg-yellow-700 text-white p-4 rounded-full absolute top-5 left-5 opacity-0 group-hover:opacity-100 disabled:group-hover:opacity-5 translate-x-12 group-hover:transition group-hover:duration-500 group-hover:translate-x-0"
         >
           <span className="block w-6 h-6 rotate-180">
             <ArrowRightIcon />
@@ -35,7 +35,7 @@ export default function Testimonials() {
         <button
           onClick={handleNext}
           disabled={index === testimonials.length - 1}
-          className="bg-yellow-700 text-white p-4 rounded-full absolute top-5 right-5 disabled:opacity-5 disabled:group-hover:opacity-5 opacity-0 group-hover:opacity-100 -translate-x-12 group-hover:transition group-hover:duration-500 group-hover:translate-x-0"
+          className="bg-yellow-700 text-white p-4 rounded-full absolute top-5 right-5 disabled:group-hover:opacity-5 opacity-0 group-hover:opacity-100 -translate-x-12 group-hover:transition group-hover:duration-500 group-hover:translate-x-0"
         >
           <span className="block w-6 h-6">
             <ArrowRightIcon />
